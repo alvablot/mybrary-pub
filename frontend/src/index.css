@@ -1,0 +1,146 @@
+:root {
+  --main-bg-color: #fcfcfc;
+  --main-font-color: #121212;
+  --main-link-color: #002fbb;
+  --main-hover-color: #de008d;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(11, 8, 8, 0.87);
+  background-color: var(--main-bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  font-weight: 500;
+  color: var(--main-link-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--main-hover-color);
+}
+body {
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+h3 {
+  margin: 0 0 50px 0;
+  position: relative;
+  font-size: 15px;
+  bottom: 50px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  background-color: #202020;
+  margin: 5px;
+  filter: drop-shadow(0px 5px 5px rgb(10, 10, 10, 0.3));
+}
+input,
+select,
+option,
+textarea {
+  border-radius: 8px;
+  border: 1px solid #202020;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--main-font-color);
+  background-color: #ffffff;
+  margin: 5px;
+}
+textarea {
+  width: 95%;
+  max-width: 600px;
+  height: 150px;
+}
+button:hover {
+  color: var(--main-font-color);
+  background-color: #a9a9a9;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  text-align: left;
+  padding: 10px;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 400px) {
+  :root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .App {
+    padding: 0px;
+    margin: 0;
+  }
+  b {
+    font-size: 13px;
+  }
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.4em 0.8em;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: inherit;
+    color: white;
+    background-color: #202020;
+    margin: 5px;
+    filter: drop-shadow(0px 5px 5px rgb(10, 10, 10, 0.3));
+  }
+  input,
+  select,
+  option,
+  textarea {
+    border-radius: 8px;
+    border: 1px solid #202020;
+    padding: 0.4em 1em;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--main-font-color);
+    background-color: #ffffff;
+    margin-top: 0px;
+  }
+  textarea {
+    width: 200px;
+    max-width: 600px;
+    height: 100px;
+  }
+}
